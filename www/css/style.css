@@ -19,7 +19,7 @@
     font-size: 12px;
 }
 
-input[type="email"], input[type="number"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
     width: 100%;
     padding: 6px;
     margin: 4px 0;

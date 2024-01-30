@@ -24,14 +24,22 @@
     </div>
     <hr>
     <div>
+        <h2>ユーザー名でログイン</h2>
+        <input type="text" id="userName" placeholder="ユーザー名" />
+        <input type="password" id="passwordForUserName" placeholder="パスワード" />
+        <button class="button" id="loginWithUserNameButton">ユーザー名でログイン</button>
+    </div>
+    <hr>
+    <div>
         <h2>ログイン状態</h2>
         <div id="loginStatus"></div>
     </div>
 </div>
 <script type="module">
-    import { onClickSendPasswordResetEmail, onClickLogin } from './app.js';
+    import { onClickSendPasswordResetEmail, onClickLogin, onClickLoginWithUserName } from './app.js';
     document.getElementById('sendEmailButton').addEventListener('click', onClickSendPasswordResetEmail);
     document.getElementById('loginButton').addEventListener('click', onClickLogin);
+    document.getElementById('loginWithUserNameButton').addEventListener('click', onClickLoginWithUserName);
 </script>
 </body>
 </html>
